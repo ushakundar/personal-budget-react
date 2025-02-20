@@ -1,32 +1,30 @@
-import react from 'react';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom"
+import React from 'react';
+import './app.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
 
 import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
-import aboutpage from './aboutpage/aboutpage';
+import AboutPage from './aboutpage/aboutpage';
+import LoginPage from './LoginPage/LoginPage';
+
 
 function App() {
   return (
     <Router>
-        <Menu/>
-        <Hero/>
-        <div className="mainContainer">
-          <switch>
-            <Route path="/aboutpage">
-            <aboutpage></aboutpage>
-            </Route>
-          </switch>
-        </div>
-        <HomePage/>
-        <Footer/>
+      <Menu/>
+      <Hero/>
+      <div className="mainContainer">
+      <Routes>
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      </div>
+      <Footer/>
     </Router>
   );
 }

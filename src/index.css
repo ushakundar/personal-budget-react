@@ -357,9 +357,6 @@ template {
 
 
 
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -370,7 +367,7 @@ body {
 }
 
 nav {
-  width: 170%;
+  width: 100%;
   background-color: #4d5791;
   height: 44px;
   padding: 0 40px;
@@ -400,11 +397,10 @@ nav ul li a:hover  {
 }
 
 div.hero {
-  
   height: 350px;
   background-color: #b4c6f0;
   background-image: url('C:\Users\User\personal-budget-react\public\bg.png');
-  background-size: 520px;
+  background-size: 400px;
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-top: 40px;
@@ -428,25 +424,19 @@ div.hero h2 {
 
 main {
   padding: 40px;
-  width: 150%;
+  width: 100%;
 }
 
 .page-area {
-  max-width: 860px;
+  max-width: 768px;
   display: inline-block;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Ensure it spans the full width of the screen */
-  height: 10px;
-  background-color: #d859d8;
+  height: 50px;
+  background-color: #b4c6f0;
   padding: 40px;
-  box-sizing: border-box; /* Ensures padding doesn't increase the footer's size */
 }
-
 
 .skip {
   display: block;
@@ -465,8 +455,8 @@ footer {
 
 main article {
   display: inline-block;
-  width: 150%;
-  max-width: 380px;
+  width: 100%;
+  max-width: 340px;
   text-align: justify;
   margin: 20px;
 }
